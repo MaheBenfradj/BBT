@@ -1,0 +1,96 @@
+{% extends 'base2.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block body %}
+    <section class="global-page-connection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <ol class="breadcrumb list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="{{ path('homepage') }}">
+                                    <i class="ion-ios-home"></i>
+                                    Accueil &nbsp; &nbsp;/
+                                </a>
+                            </li>
+                            <li class="active list-inline-item">Connexion à l'administration de <b>Best Body Travel</b>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features bg-light" data-aos="fade-up">
+        <div class="container ">
+
+            <div class="section-title ">
+                <h2>S'inscrire</h2>
+                <p>Créer un accée pour accéder à l'administration de
+                    <b>BBT</b> .</p>
+            </div>
+
+            <div class="row content">
+
+                {% for message in app.flashes('danger','success') %}
+                    <div class="alert alert-success">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+                {% set formErrors = form.vars.errors.form.getErrors(true) %}
+                {% if formErrors|length %}
+                    <div class="alert alert-danger">
+                        <ul>
+                            {% for error in formErrors %}
+                                <i style="color:#c82333"
+                                   class="bx bx-shield-x"></i>
+                                {{ error.message }}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+                {{ form_start(form) }}
+                <br>
+                <div class="form-group row">
+                    {{ form_label(form.email) }}
+                    <div class="col-sm-10">
+                        {{ form_widget(form.email) }}
+
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    {{ form_label(form.username) }}
+                    <div class="col-sm-10">
+                        {{ form_widget(form.username) }}
+
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    {{ form_label(form.password.first) }}
+                    <div class="col-sm-10">
+                        {{ form_widget(form.password.first, {'attr': {'class':'form-control'}}) }}
+
+                    </div>
+                </div>
+                <br>
+                <div class="form-group row">
+                    {{ form_label(form.password.second) }}
+                    <div class="col-sm-10">
+                        {{ form_widget(form.password.second, {'attr': {'class':'form-control'}}) }}
+
+                    </div>
+                </div>
+                <br>
+
+                <button class="btn btn-lg appointment-btn float-end">{{ button_label|default(' S inscrire') }}</button>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

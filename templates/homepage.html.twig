@@ -1,0 +1,995 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+
+    <main id="main">
+        <!-- ======= Hero Section ======= -->
+        <section id="hero" class="d-flex align-items-center">
+            <div class="container">
+                <h1>Bienvenue chez Best body travel</h1>
+                <rs-layer id="slider-2-slide-5-layer-2" data-type="text" data-color="rgba(0, 0, 0, 1)" data-rsp_ch="on"
+                          data-xy="xo:0,30px,12px,11px;yo:310px,190px,192px,99px;"
+                          data-text="w:nowrap,normal,nowrap,nowrap;s:50,50,50,30;l:60;fw:300;"
+                          data-dim="w:auto,624px,auto,auto;h:auto,242px,auto,auto;" data-layeronlimit="on"
+                          data-frame_0="y:100%;tp:600;" data-frame_0_mask="u:t;y:100%;"
+                          data-frame_1="tp:600;e:power2.inOut;st:1390;sp:1000;sR:1390;" data-frame_1_mask="u:t;"
+                          data-frame_999="o:0;tp:600;e:nothing;st:w;sR:6610;"
+                          style="z-index: 8; font-family: Quicksand; letter-spacing: -3px; height: auto; width: auto; color: rgb(0, 0, 0); text-decoration: none; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; text-align: left; line-height: 60px; font-weight: 300; font-size: 50px; transform-origin: 50% 50%; opacity: 1; transform: translate(0px, 0px); visibility: visible;"
+                          class="rs-layer" data-idcheck="true" data-stylerecorder="true" data-initialised="true">
+                    Révélez votre
+                    <span
+                            class="stronger" ;=""
+                            style="color: rgb(216, 152, 116); font-weight: 700; text-align: left; line-height: 25px; letter-spacing: -3px;"
+                            data-stylerecorder="true">véritable beauté </span>avec nous<br>la destination de confiance
+                    pour des transformations esthétiques exceptionnelles
+
+                    <style data-stylerecorder="true"
+                           style="text-align: left; line-height: 60px; letter-spacing: -3px; font-weight: 300; font-size: 50px;">
+                        .stronger {
+                            font-weight: 700 !important;
+                        }
+                    </style>
+
+                </rs-layer>
+                <hr>
+                <a href="{{ path('app_devis_new') }}" class="btn-get-started scrollto">Demander un Devis</a>
+            </div>
+        </section>
+        <!-- End Hero -->
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="content">
+                            <h3>
+                                Pourquoi choisir Best body travel ?</h3>
+                            <p>
+                                Notre équipe de chirurgiens experts vous offre des solutions personnalisées, une qualité
+                                supérieure et l'environnement serein dont vous avez besoin pour réaliser vos rêves de
+                                perfectionnement physique. <br><br>
+                                Voyagez en toute confiance avec <b>Best body travel </b> et découvrez une
+                                nouvelle version resplendissante de vous-même.<br>
+                            </p>
+                            <div class="text-center">
+                                <a href="{{ path('quisommesnous') }}" class="more-btn">Voir plus <i
+                                            class="bx bx-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex align-items-stretch">
+                        <div class="icon-boxes d-flex flex-column justify-content-center">
+                            <div class="row">
+                                <div class="col-xl-4 d-flex align-items-stretch">
+                                    <div class="icon-box mt-4 mt-xl-0">
+                                        {# <i class="bx bx-receipt"></i> #}
+                                        <div class="icon-wrapper"><img width="215" height="215"
+                                                                       src="https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-1.jpg"
+                                                                       class="attachment-full" alt="service-image-1"
+                                                                       decoding="async" loading="lazy"
+                                                                       srcset="https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-1.jpg 215w, https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-1-100x100.jpg 100w, https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-1-150x150.jpg 150w"
+                                                                       sizes="(max-width: 215px) 100vw, 215px"></div>
+                                        <h4>SEINS</h4>
+                                        <p>Osez embrasser votre féminité avec une augmentation mammaire sur mesure.
+                                            Obtenez des courbes naturelles et une confiance épanouie !</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-flex align-items-stretch">
+                                    <div class="icon-box mt-4 mt-xl-0">
+                                        <div class="icon-wrapper"><img width="215" height="215"
+                                                                       src="https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-2.jpg"
+                                                                       class="attachment-full" alt="service-image-2"
+                                                                       decoding="async" loading="lazy"
+                                                                       srcset="https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-2.jpg 215w, https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-2-100x100.jpg 100w, https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-2-150x150.jpg 150w"
+                                                                       sizes="(max-width: 215px) 100vw, 215px"></div>
+                                        <h4>CORPS</h4>
+                                        <p>Révélez la meilleure version de votre corps avec notre expertise en
+                                            chirurgie esthétique. Obtenez une silhouette sculptée selon vos désirs !</p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 d-flex align-items-stretch">
+                                    <div class="icon-box mt-4 mt-xl-0">
+                                        <div class="icon-wrapper"><img width="215" height="215"
+                                                                       src="https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-3.jpg"
+                                                                       class="attachment-full" alt="service-image-3"
+                                                                       decoding="async" loading="lazy"
+                                                                       srcset="https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-3.jpg 215w, https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-3-100x100.jpg 100w, https://onelifewp.wpenginepowered.com/wp-content/uploads/2016/03/service-image-3-150x150.jpg 150w"
+                                                                       sizes="(max-width: 215px) 100vw, 215px"></div>
+                                        <h4>LIFTING</h4>
+                                        <p>Découvrez votre nouvel éclat ! Plongez dans la beauté sans attendre avec nos
+                                            liftings sublimes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- End .content-->
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Why Us Section -->
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container-fluid">
+
+                <div class="row">
+                    {# class:video-box #}
+                    <div class="col-xl-5 col-lg-6  d-flex justify-content-center align-items-stretch position-relative">
+                        {# https://www.istockphoto.com/ <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+
+                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+                        #} <img src="{{ asset('assets/img/gallery/3acc.png') }}">
+                    </div>
+
+                    <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                        <h3>Nous sommes là pour vous</h3>
+                        <p>Best body travel une agence spécialisée dans le tourisme médical en Tunisie, offre une prise
+                            en
+                            charge complète du séjour médical, avec une focalisation sur la chirurgie plastique
+                            (chirurgie réparatrice, chirurgie de l'obésité) ainsi que la chirurgie générale (chirurgie
+                            cardio-vasculaire, chirurgie orthopédique, neurochirurgie) et le traitement de
+                            l'infertilité. En tant qu'agence de tourisme de santé, Best body travel accompagne les
+                            patients étrangers et les confie à des chirurgiens esthétiques et généraux tunisiens de haut
+                            niveau. Les principaux points de notre agence sont les suivants :</p>
+
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                            <h4 class="title"><a href="">Excellence médicale</a></h4>
+                            <p class="description">Best body travel collabore avec les meilleures équipes médicales en
+                                Tunisie, assurant des soins et des interventions de qualité dans les meilleures
+                                cliniques du pays. Nos chirurgiens esthétiques tunisiens sont réputés pour leur
+                                savoir-faire et leur expérience, garantissant des résultats fiables en termes de
+                                rajeunissement, de modelage et de correction des imperfections physiques. Chaque
+                                prestation est personnalisée pour répondre aux besoins spécifiques de chaque
+                                patient.</p>
+                        </div>
+
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-gift"></i></div>
+                            <h4 class="title"><a href="">Accessibilité et efficacité</a></h4>
+                            <p class="description">En choisissant Best body travel, vous évitez les longs délais
+                                d'attente
+                                et bénéficiez de tarifs avantageux pour la chirurgie esthétique et générale. Nous vous
+                                offrons une solution abordable pour toutes vos interventions plastiques ou chirurgies
+                                spécifiques, sans compromettre la qualité des soins.</p>
+                        </div>
+
+                        <div class="icon-box">
+                            <div class="icon"><i class="bx bx-atom"></i></div>
+                            <h4 class="title"><a href="">Service complet et satisfaction du patient</a></h4>
+                            <p class="description">L'agence Best body travel se soucie de votre satisfaction et prend en
+                                charge tous les aspects de votre voyage médical en Tunisie. Notre équipe dévouée vous
+                                offre un service tout compris, en vous fournissant les meilleurs conseils et en
+                                s'occupant de tous les détails de votre voyage, y compris les billets d'avion, la
+                                réservation d'hôtel, le séjour, le choix des cliniques et les rendez-vous avec les
+                                chirurgiens. Nous veillons à ce que votre expérience soit sans tracas et que vous
+                                bénéficiez d'un accompagnement complet tout au long de votre séjour médical en
+                                Tunisie.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End About Section -->
+
+        <!-- ======= Counts Section ======= -->
+        <!--
+        <section id="counts" class="counts">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="count-box">
+                            <i class="fas fa-user-md"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1"
+                                  class="purecounter"></span>
+                            <p>Doctors</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+                        <div class="count-box">
+                            <i class="far fa-hospital"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1"
+                                  class="purecounter"></span>
+                            <p>Departments</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                            <i class="fas fa-flask"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1"
+                                  class="purecounter"></span>
+                            <p>Research Labs</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+                        <div class="count-box">
+                            <i class="fas fa-award"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"
+                                  class="purecounter"></span>
+                            <p>Awards</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section> -->
+        <!-- End Counts Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Nos interventions</h2>
+                    <p></p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                        <a href="{{ path('ChirurgieEsthétique') }}">
+                            <div class="icon-box">
+                                <div class="icon"><i class="fas fa-heartbeat"></i></div>
+                                <h4><a href="{{ path('ChirurgieEsthétique') }}">Chirurgie esthétique</a></h4>
+                                <p>Découvrez la transformation dont vous rêvez grâce à notre expertise en chirurgie
+                                    esthétique, où la beauté et la confiance en soi se rencontrent pour vous offrir des
+                                    résultats exceptionnels.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                        <a href="{{ path('ChirurgieObésité') }}">
+                            <div class="icon-box">
+                                <div class="icon"><i class="fas fa-hospital-user"></i>
+                                </div>
+                                <h4><a href="{{ path('ChirurgieObésité') }}">Chirurgie de l'obésité</a></h4>
+                                <p>Redécouvrez une vie plus saine et épanouissante grâce à notre expertise en chirurgie
+                                    de
+                                    l'obésité. Libérez-vous du fardeau du surpoids et retrouvez une nouvelle vitalité
+                                    pour
+                                    embrasser pleinement la vie qui vous attend.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                        <a href="{{ path('GreffeCheveux') }}">
+                            <div class="icon-box">
+                                <div class="icon">
+                                    <i class="fas fa-pills"></i>
+                                </div>
+                                <h4><a href="{{ path('GreffeCheveux') }}">Greffe de cheveux</a></h4>
+                                <p>Confiez votre transformation capillaire à notre équipe spécialisée, dédiée à
+                                    restaurer votre apparence et à vous offrir une nouvelle qualité de vie. Notre
+                                    approche professionnelle et nos techniques de pointe garantissent des résultats
+                                    naturels et durables.</p>
+                            </div>
+                        </a>
+                    </div>
+                    {#
+                    <!-- =======  Section des intervensions non traitées ======= -->
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                        <a href="{{ path('chirurgieOrthopédique') }}">
+                            <div class="icon-box">
+                                <div class="icon"><i class="fas fa-dna"></i></div>
+                                <h4><a href="{{ path('chirurgieOrthopédique') }}">Chirurgie orthopédique</a></h4>
+                                <p>
+                                    Retrouvez votre mobilité et votre liberté de mouvement grâce à notre expertise en
+                                    chirurgie orthopédique. Nous sommes là pour vous accompagner dans votre parcours de
+                                    guérison, en restaurant la fonctionnalité de vos articulations et en vous aidant à
+                                    retrouver une vie active et sans douleur.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                        <a href="{{ path('neurochirurgie') }}">
+                            <div class="icon-box">
+                                <div class="icon"><i class="fas fa-wheelchair"></i></div>
+                                <h4><a href="{{ path('neurochirurgie') }}">Neurochirurgie</a></h4>
+                                <p>
+                                    Confiez votre santé cérébrale et nerveuse à notre équipe spécialisée en
+                                    neurochirurgie.
+                                    Nous comprenons l'importance de votre bien-être neurologique et mettons notre
+                                    expertise
+                                    à votre service pour vous offrir des soins avancés et personnalisés, afin de vous
+                                    aider
+                                    à retrouver une meilleure qualité de vie.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+                        <a href="{{ path('traitementInfertilité') }}">
+                            <div class="icon-box">
+                                <div class="icon"><i class="fas fa-notes-medical"></i></div>
+                                <h4><a href="{{ path('traitementInfertilité') }}">Traitement de l'infertilité</a></h4>
+                                <p>
+                                    Transformez votre rêve de fonder une famille en réalité grâce à notre expertise en
+                                    traitement de l'infertilité. Notre équipe médicale hautement qualifiée est dévouée à
+                                    vous accompagner dans ce parcours émotionnellement chargé, en vous offrant des
+                                    solutions
+                                    personnalisées et des avancées médicales de pointe pour augmenter vos chances de
+                                    réussite.</p>
+                            </div>
+                        </a>
+                    </div>
+                    #}
+                </div>
+
+            </div>
+        </section><!-- End Services Section -->
+
+        <!-- ======= Appointment Section ======= -->
+        <section id="appointment" class="appointment section-bg">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Prendre rendez-vous</h2>
+                    <p>
+                        Nous comprenons les difficultés que vous rencontrez et nous sommes là pour vous aider à les
+                        surmonter. Nos services sont conçus pour répondre à vos besoins spécifiques et vous offrir la
+                        tranquillité d'esprit que vous recherchez. Nous accueillons tous ceux qui désirent obtenir le
+                        soutien dont ils ont besoin, sans jugement ni obstacles. Notre bureau est un lieu de
+                        bienveillance et de compréhension où vous pouvez vous sentir à l'aise et en confiance.</p>
+                    <p>Veuillez prendre le temps de remplir le ci-dessous afin que notre équipe puisse répondre au mieux
+                        à
+                        vos attentes et
+                        prendre contact avec vous.
+                    </p>
+                </div>
+                {% include 'demande_rdv/new.html.twig' %}
+
+
+            </div>
+        </section><!-- End Appointment Section -->
+
+        <!-- ======= Departments Section ======= -->
+        {#
+        <section id="departments" class="departments">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Departments</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                        sint
+                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                        Quia
+                        fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row gy-4">
+                    <div class="col-lg-3">
+                        <ul class="nav nav-tabs flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Cardiology</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Neurology</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Hepatology</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Pediatrics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Eye Care</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="tab-content">
+                            <div class="tab-pane active show" id="tab-1">
+                                <div class="row gy-4">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Cardiology</h3>
+                                        <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
+                                            dila
+                                            parde sonata raqer a videna mareta paulona marka</p>
+                                        <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.
+                                            Laborum
+                                            eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat
+                                            minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos
+                                            qui
+                                            similique accusamus nostrum rem vero</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-2">
+                                <div class="row gy-4">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Et blanditiis nemo veritatis excepturi</h3>
+                                        <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
+                                            dila
+                                            parde sonata raqer a videna mareta paulona marka</p>
+                                        <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et
+                                            reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et
+                                            velit
+                                            ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna
+                                            desera vafle de nideran pal</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-3">
+                                <div class="row gy-4">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                                        <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non
+                                            enim
+                                            fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat
+                                            perferendis
+                                            aut</p>
+                                        <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis
+                                            quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima
+                                            molestiae
+                                            sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et
+                                            harum voluptatem optio quae</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-4">
+                                <div class="row gy-4">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                                        <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure
+                                            voluptas
+                                            iure porro quis delectus</p>
+                                        <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
+                                            necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in
+                                            consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam
+                                            quia a
+                                            laborum inventore</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tab-5">
+                                <div class="row gy-4">
+                                    <div class="col-lg-8 details order-2 order-lg-1">
+                                        <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                                        <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro
+                                            quia.</p>
+                                        <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis
+                                            recusandae
+                                            ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet.
+                                            Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                                    </div>
+                                    <div class="col-lg-4 text-center order-1 order-lg-2">
+                                        <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        #}
+        <!-- End Departments Section -->
+
+        <!-- ======= Doctors Section ======= -->
+        {#
+        <section id="doctors" class="doctors">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Doctors</h2>
+                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                        sint
+                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                        Quia
+                        fugiat sit in iste officiis commodi quidem hic quas.</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="assets/img/doctors/doctors-1.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Walter White</h4>
+                                <span>Chief Medical Officer</span>
+                                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="assets/img/doctors/doctors-2.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Sarah Jhonson</h4>
+                                <span>Anesthesiologist</span>
+                                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="assets/img/doctors/doctors-3.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>William Anderson</h4>
+                                <span>Cardiology</span>
+                                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-4">
+                        <div class="member d-flex align-items-start">
+                            <div class="pic"><img src="assets/img/doctors/doctors-4.jpg" class="img-fluid" alt=""></div>
+                            <div class="member-info">
+                                <h4>Amanda Jepson</h4>
+                                <span>Neurosurgeon</span>
+                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                                <div class="social">
+                                    <a href=""><i class="ri-twitter-fill"></i></a>
+                                    <a href=""><i class="ri-facebook-fill"></i></a>
+                                    <a href=""><i class="ri-instagram-fill"></i></a>
+                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        #}
+        <!-- End Doctors Section -->
+
+        <!-- ======= Frequently Asked Questions Section ======= -->
+        <section id="faq" class="faq section-bg">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Questions fréquemment posées</h2>
+                </div>
+
+                <div class="faq-list">
+                    <ul>
+
+
+                        <li data-aos="fade-up">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse"
+                                                                           data-bs-target="#faq-list-1">{{ faqs[0].question }}
+                                <i class="bx bx-chevron-down icon-show"></i><i
+                                        class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                                <p>
+                                    {{ faqs[0].reponse }}
+                                </p>
+                            </div>
+                        </li>
+                        {% for faq in faqs|slice(0, 5) %}
+                            {% if faq.id >1 %}
+                                <li data-aos="fade-up" data-aos-delay="100">
+                                    <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                                                                   data-bs-target="#faq-list-2"
+                                                                                   class="collapsed">{{ faq.question }}
+                                        <i
+                                                class="bx bx-chevron-down icon-show"></i><i
+                                                class="bx bx-chevron-up icon-close"></i></a>
+                                    <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                        <p>
+                                            {{ faq.reponse }}
+                                        </p>
+                                    </div>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center voirPlus">
+                <a type="button" href="{{ path('QFP') }}">Voir plus</a>
+            </div>
+
+
+        </section><!-- End Frequently Asked Questions Section -->
+
+        <!-- ======= Testimonials Section ======= -->
+        {#
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img"
+                                         alt="">
+                                    <h3>Saul Goodman</h3>
+                                    <h4>Ceo &amp; Founder</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
+                                        suscipit
+                                        rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen
+                                        aliquam,
+                                        risus at semper.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img"
+                                         alt="">
+                                    <h3>Sara Wilsson</h3>
+                                    <h4>Designer</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum
+                                        quid
+                                        cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure
+                                        amet
+                                        legam anim culpa.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img"
+                                         alt="">
+                                    <h3>Jena Karlis</h3>
+                                    <h4>Store Owner</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem
+                                        veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis
+                                        sint
+                                        minim.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img"
+                                         alt="">
+                                    <h3>Matt Brandon</h3>
+                                    <h4>Freelancer</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim
+                                        fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore
+                                        quem
+                                        dolore labore illum veniam.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item">
+                                    <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img"
+                                         alt="">
+                                    <h3>John Larson</h3>
+                                    <h4>Entrepreneur</h4>
+                                    <p>
+                                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor
+                                        noster
+                                        veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse
+                                        veniam
+                                        culpa fore nisi cillum quid.
+                                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section> #}
+        <!-- End Testimonials Section -->
+
+        <!-- ======= Gallery Section ======= -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Galerie</h2>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row g-0">
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="assets/img/gallery/g7.avif" class="galelry-lightbox">
+                                <img width="800" height="600" src="assets/img/gallery/g7.avif" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="{{ asset('assets/img/gallery/g2.jpg') }}" class="galelry-lightbox">
+                                <img width="800" height="600" src="{{ asset('assets/img/gallery/g2.jpg') }}" alt=""
+                                     class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="{{ asset('assets/img/gallery/g4.PNG') }}" class="galelry-lightbox">
+                                <img width="800" height="600" src="{{ asset('assets/img/gallery/g4.PNG') }}" alt=""
+                                     class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="{{ asset('assets/img/gallery/g4.jpg') }}" class="galelry-lightbox">
+                                <img width="800" height="600" src="{{ asset('assets/img/gallery/g4.jpg') }}" alt=""
+                                     class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="{{ asset('assets/img/gallery/g5.jpg') }}" class="galelry-lightbox">
+                                <img width="800" height="600" src="{{ asset('assets/img/gallery/g5.jpg') }}" alt=""
+                                     class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="{{ asset('assets/img/gallery/g6.jpg') }}" class="galelry-lightbox">
+                                <img width="800" height="600" src="{{ asset('assets/img/gallery/g6.jpg') }}" alt=""
+                                     class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="{{ asset('assets/img/gallery/g7.jpg') }}" class="galelry-lightbox">
+                                <img width="800" height="600" src="{{ asset('assets/img/gallery/g7.jpg') }}" alt=""
+                                     class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4">
+                        <div class="gallery-item">
+                            <a href="{{ asset('assets/img/gallery/g8.jpg') }}" class="galelry-lightbox">
+                                <img width="800" height="600" src="{{ asset('assets/img/gallery/g8.jpg') }}" alt=""
+                                     class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Gallery Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-5">
+
+                    <div class="col-lg-4">
+                        <div class="info">
+                            {#
+                            <div class="address">
+                                <i class="bi bi-geo-alt"></i>
+                                <h4>Location:</h4>
+                                <p>A108 Adam Street, New York, NY 535022</p>
+                            </div>
+                            #}
+                            <div class="email">
+                                <i class="bi bi-envelope"></i>
+                                <h4>Email:</h4>
+                                <p>{{ appEmail }}</p>
+                            </div>
+
+                            <div class="phone">
+                                <i class="bi bi-phone"></i>
+                                <h4>Call:</h4>
+                                <p>{{ appTel }}</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-8 mt-5 mt-lg-0">
+                        <form action="{{ path('homepage') }}" method="POST" class="php-email-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                           placeholder="Nom"
+                                    >
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="text" class="form-control" name="Prénom" id="Prénom"
+                                           placeholder="Prénom">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="telephone" class="form-control" id="tel"
+                                           placeholder="Téléphone"
+                                    >
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                           placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                       placeholder="Objet"
+                                >
+                            </div>
+                            <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                            ></textarea>
+                            </div>
+                            <div class="my-3">
+
+                                <div class="error-message"></div>
+                                <div class="sent-message">Votre message a été envoyé. Merci!</div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" name="envoyer">Envoyer</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Contact Section -->
+        <!-- notif Section -->
+        {#
+        <style>
+            .notifications {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: 1000;
+            }
+
+
+            .notifications .notifications__top-left, .notifications .notifications__top-right, .notifications .notifications__top-center, .notifications .notifications__bottom-left, .notifications .notifications__bottom-right, .notifications .notifications__bottom-center, .notifications .notifications__center {
+                position: absolute;
+            }
+            .notifications__bottom-right {
+                bottom: 0;
+                right: 20px;
+            }
+            #adobe-coupon .notification__close {
+                z-index: 10;
+            }
+
+            .notification__close:not(.nostyle) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 5px;
+            }
+
+
+        </style>
+        <div id="notifications" class="notifications">
+            <div class="notifications__bottom-right adobe-coupon-container">
+                <div id="adobe-coupon"
+                     class="notification notify notify--banner notification--hide-disable bg__background--secondary notification--show"
+                     data-recurrent="true" data-cookie-expiry="1724320777919">
+
+                    <button class="notification__close button button--md button--icon button--link text__gray--oxford">
+                        <i class="icon--cross"></i>
+                    </button>
+
+                    <div class="notification__content">
+                        <a id="adobe-coupon-button"
+                           href="https://www.freepik.com/redirect?url=aHR0cHM6Ly9hZG9iZS5wcmYuaG4vY2xpY2svY2FtcmVmOjExMDBscjJpei9jcmVhdGl2ZXJlZjoxMDExbDkwMjMyL3B1YnJlZjpHQTEuMi4xMjMwNTY2ODMuMTY5Mjc4NDM3My9kZXN0aW5hdGlvbjpodHRwcyUzQSUyRiUyRnN0b2NrLmFkb2JlLmNvbSUyRmZyJTJGcHJvbW8lMkZmaXJzdG1vbnRoZnJlZQ==&amp;_gl=1*1h878so*fp_ga*MTIzMDU2NjgzLjE2OTI3ODQzNzM.*fp_ga_QWX66025LC*MTY5Mjc4NDM3My4xLjEuMTY5Mjc4NDc4Mi42MC4wLjA.*test_ga*MTIzMDU2NjgzLjE2OTI3ODQzNzM.*test_ga_18B6QPTJPC*MTY5Mjc4NDM3My4xLjEuMTY5Mjc4NDc4Mi41Ny4wLjA.&amp;_ga=2.219154201.162838046.1692784373-123056683.1692784373"
+                           target="_blank">
+                            <img src="https://freepik.cdnpk.net/img/coupon/adobe-stockbanner/FR_1.jpg" alt="">
+                            <img src="https://freepik-creative.prf.hn/source/camref:1100lr2iz/creativeref:1011l90232/r:1692784777931"
+                                 alt="" style="visibility: hidden;">
+                        </a>
+
+                        <div class="notification__disable">
+                            <label class="checkbox checkbox--sm checkbox--left mg-none-i">
+                                <input type="checkbox" name="notification-persistant">
+                                <span class="checkbox__indicator">
+                <i class="icon icon--check"></i>
+            </span>
+                                <span class="checkbox__link font-xs">Don't show this notification again.</span>
+                            </label>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div> #}
+        <!-- End notif Section -->
+    </main>
+    <!-- End #main -->
+
+
+{% endblock body %}

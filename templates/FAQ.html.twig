@@ -1,0 +1,63 @@
+{% extends 'base2.html.twig' %}
+{% block title %}Questions fréquemment posées{% endblock %}
+{% block body %}
+    <!--
+          ==================================================
+              Global Page Section Start
+          ================================================== -->
+    <section class="global-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <ol class="breadcrumb list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="{{ path('homepage') }}">
+                                    <i class="ion-ios-home"></i>
+                                    Accueil &nbsp; &nbsp;/
+                                </a>
+                            </li>
+                            <li class="active list-inline-item">Questions fréquemment posées</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+==================================================
+    Company Description Section Start
+================================================== -->
+    <section id="faq" class="faq section-bg">
+        <div class="container">
+            <div class="faq-list">
+                <ul>
+
+                    {% for faq in faqs %}
+                        <li data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse"
+                                                                           data-bs-target="#faq-list-2"
+                                                                           class="collapsed">{{ faq.question }}
+                                <i
+                                        class="bx bx-chevron-down icon-show"></i><i
+                                        class="bx bx-chevron-up icon-close"></i></a>
+                            <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                                <p>
+                                    {{ faq.reponse }}
+                                </p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--
+
+
+{% endblock body %}

@@ -1,0 +1,194 @@
+{{ form_start(form) }}
+
+ {% for message in app.flashes('success') %}
+     <div class="alert alert-success">
+         {{ message }}
+     </div>
+ {% endfor %}
+<!-- Content -->
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Veuillez remplir le formulaire ci-dessous et nous
+    vous
+    contacterons dans les plus
+    brefs délais.</span></h4>
+
+    <!-- Basic Layout & Basic with Icons -->
+    <div class="row">
+
+        <!-- Basic with Icons -->
+        <div class="col-xxl">
+            <div class="card mb-4">
+                <div class="card-header d-flex align-items-center justify-content-between">
+                    <h5 class="mb-0">Contacts</h5>
+                    <small class="text-muted float-end">info perso</small>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label"
+                               for="basic-icon-default-fullname">   {{ form_label(form.patient.nom) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                              ><i class="bx bx-user"></i
+                                  ></span>
+                                {{ form_errors(form.patient.nom) }}
+                                {{ form_widget(form.patient.nom, {'attr': {'class': 'form-control'}}) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label"
+                               for="basic-icon-default-fullname">   {{ form_label(form.patient.dateNaissance) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                              ><i class="bx bx-calendar"></i
+                                  ></span>
+                                {{ form_errors(form.patient.dateNaissance) }}
+                                {{ form_widget(form.patient.dateNaissance, {'attr': {'class': 'form-control'}}) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label"
+                               for="basic-icon-default-email"> {{ form_label(form.patient.email) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                                <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                                {{ form_errors(form.patient.email) }}
+                                {{ form_widget(form.patient.email, {'attr': {'class': 'form-control'}}) }}
+                                <span id="basic-icon-default-email2" class="input-group-text">@example.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 form-label"
+                               for="basic-icon-default-phone">{{ form_label(form.patient.telephine) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-phone2" class="input-group-text"
+                              ><i class="bx bx-phone"></i
+                                  ></span>
+                                {{ form_errors(form.patient.telephine) }}
+                                {{ form_widget(form.patient.telephine, {'attr': {'class': 'form-control'}}) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label"
+                               for="basic-icon-default-company">{{ form_label(form.patient.pays) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                {{ form_errors(form.patient.pays) }}
+                                {{ form_widget(form.patient.pays, {'attr': {'class': 'form-control'}}) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label"
+                               for="basic-icon-default-company">{{ form_label(form.patient.adresse) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                {{ form_errors(form.patient.adresse) }}
+                                {{ form_widget(form.patient.adresse, {'attr': {'class': 'form-control'}}) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label"
+                               for="basic-icon-default-company">{{ form_label(form.operation) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                {{ form_errors(form.operation) }}
+                                {{ form_widget(form.operation) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label"
+                               for="basic-icon-default-company">{{ form_label(form.dateIntervention) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                {{ form_errors(form.dateIntervention) }}
+                                {{ form_widget(form.dateIntervention) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 form-label"
+                               for="basic-icon-default-message">{{ form_label(form.message) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-message2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                {{ form_errors(form.message) }}
+                                {{ form_widget(form.message) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 form-label"
+                               for="basic-icon-default-message">{{ form_label(form.AntecedentsMedicaux) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-AntecedentsMedicaux2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                {{ form_errors(form.AntecedentsMedicaux) }}
+                                {{ form_widget(form.AntecedentsMedicaux) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 form-label"
+                               for="basic-icon-default-message">{{ form_label(form.antecedentsChirurgicaux) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-antecedentsChirurgicaux2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                {{ form_errors(form.antecedentsChirurgicaux) }}
+                                {{ form_widget(form.antecedentsChirurgicaux) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-2 form-label"
+                               for="basic-icon-default-message">{{ form_label(form.traitementEnCours) }}</label>
+                        <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-traitementEnCours2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                {{ form_errors(form.traitementEnCours) }}
+                                {{ form_widget(form.traitementEnCours) }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-sm-10">
+                            <button style="border-radius: 50px;background: #d89874;border: 0;" type="submit"
+                                    class="btn btn-primary float-end">{{ button_label|default('Enregistrer') }}</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ form_end(form) }}

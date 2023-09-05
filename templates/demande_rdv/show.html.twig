@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DemandeRDV{% endblock %}
+
+{% block body %}
+    <h1>DemandeRDV</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ demande_r_d_v.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ demande_r_d_v.nom }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ demande_r_d_v.email }}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{ demande_r_d_v.telephone }}</td>
+            </tr>
+            <tr>
+                <th>DateRDV</th>
+                <td>{{ demande_r_d_v.dateRDV ? demande_r_d_v.dateRDV|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>DateCreation</th>
+                <td>{{ demande_r_d_v.dateCreation ? demande_r_d_v.dateCreation|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Message</th>
+                <td>{{ demande_r_d_v.message }}</td>
+            </tr>
+            <tr>
+                <th>Etat</th>
+                <td>{{ demande_r_d_v.etat }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_demande_r_d_v_index') }}">back to list</a>
+
+    <a href="{{ path('app_demande_r_d_v_edit', {'id': demande_r_d_v.id}) }}">edit</a>
+
+    {{ include('demande_rdv/_delete_form.html.twig') }}
+{% endblock %}

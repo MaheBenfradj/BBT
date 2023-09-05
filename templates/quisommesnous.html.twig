@@ -1,0 +1,67 @@
+{% extends 'base2.html.twig' %}
+{% block title %}Qui sommes nous{% endblock %}
+{% block body %}
+    <!--
+          ==================================================
+              Global Page Section Start
+          ================================================== -->
+    <section class="global-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <ol class="breadcrumb list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="{{ path('homepage') }}">
+                                    <i class="ion-ios-home"></i>
+                                    Accueil &nbsp; &nbsp;/
+                                </a>
+                            </li>
+                            <li class="active list-inline-item">Qui sommes nous</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+==================================================
+    Company Description Section Start
+================================================== -->
+    <section class="company-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 wow fadeInLeft" data-wow-delay=".3s">
+                    <img  src="{{ asset('assets/img/departments-1.jpg') }}" alt="Best Body Travel" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="block">
+                        <h3 class="subtitle wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms" style="margin-top: 100px">
+                            Pourquoi nous sommes différents</h3>
+                        <p class="wow fadeInUp" data-wow-delay=".5s" data-wow-duration="500ms">
+                            Découvrez une expérience de santé exceptionnelle avec Mon Voyage Santé ! Nous sommes fiers
+                            de collaborer avec des experts médicaux de renommée mondiale et des centres de soins
+                            ultramodernes, reconnus pour leur technologie de pointe. Nous sommes passionnés et
+                            déterminés à vous guider tout au long de votre parcours vers un bien-être absolu. Votre
+                            santé est notre priorité absolue. Pour notre équipe fournie, il est essentiel que votre
+                            projet de soins soit une réussite sans faille, une expérience mémorable et une rencontre
+                            humaine enrichissante. Faites confiance à notre expertise et préparez-vous à vivre une
+                            aventure médicale inoubliable.
+                        </p>
+                        <p class="wow fadeInUp" data-wow-delay=".7s" data-wow-duration="500ms">
+                            La qualité et la sécurité sont notre culture.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--
+
+
+{% endblock body %}

@@ -1,0 +1,38 @@
+{% extends 'base2.html.twig' %}
+{% block title %}New Devis{% endblock %}
+{% block body %}
+    <!--
+          ==================================================
+              Global Page Section Start
+          ================================================== -->
+    <section class="global-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <ol class="breadcrumb list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="{{ path('homepage') }}">
+                                    <i class="ion-ios-home"></i>
+                                    Accueil &nbsp; &nbsp;/
+                                </a>
+                            </li>
+                            <li class="active list-inline-item">Demande de devis</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features" data-aos="fade-up">
+        {{ include('devis/_form.html.twig') }}
+
+    </section><!-- End Features Section -->
+
+
+
+{% endblock body %}

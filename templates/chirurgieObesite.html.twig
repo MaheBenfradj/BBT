@@ -1,0 +1,96 @@
+{% extends 'base2.html.twig' %}
+{% block title %}Qui sommes nous{% endblock %}
+{% block body %}
+    <!--
+          ==================================================
+              Global Page Section Start
+          ================================================== -->
+    <section class="global-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <ol class="breadcrumb list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="{{ path('homepage') }}">
+                                    <i class="ion-ios-home"></i>
+                                    Accueil &nbsp; &nbsp;/
+                                </a>
+                            </li>
+                            <li class="active list-inline-item">Chirurgie de l'obésité</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ======= Features Section ======= -->
+
+    <section id="features" class="features" data-aos="fade-up">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Chirurgie de l'obésité</h2>
+                <p>Merci de nous contacter directement par téléphone ou via le formulaire en ligne pour toute demande de
+                    complément d’information.</p>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
+                    <img style="margin-top: 180px" src="{{ asset('assets/img/gallery/obs.PNG') }}"
+                         class="img-fluid" alt="BBT">
+                </div>
+                <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
+                    <h3>L'obésité</h3>
+                    <p class="fst-italic">
+                        La chirurgie de l'obésité, également connue sous le nom de chirurgie bariatrique, vise à réduire
+                        la taille de l'estomac afin d'aider les personnes à perdre du poids de manière significative.
+                        Cette intervention cible spécifiquement la zone de l'estomac pour faciliter la perte de poids
+                        chez les individus concernés. En Tunisie, cette option est destinée aux adultes souffrant d'une
+                        obésité importante (indice de masse corporelle ou IMC supérieur ou égal à 35 kg/m²) ou d'une
+                        obésité sévère (IMC supérieur ou égal à 45 kg/m²).
+                    </p>
+                    <p>
+                        La gestion de la perte de poids nécessite un engagement considérable de la part des personnes
+                        concernées. Plus le surpoids est prononcé, moins les approches traditionnelles telles que les
+                        régimes et l'exercice physique s'avèrent efficaces. Dans certaines situations, choisir la voie
+                        de la chirurgie bariatrique se révèle être le moyen le plus approprié pour traiter l'obésité.
+                    </p>
+                    <p>
+                        L'obésité et le surplus de poids ont un impact significatif sur la santé en contribuant à divers
+                        problèmes cardiovasculaires, au diabète de type 2, à des troubles articulaires, et augmentent le
+                        risque de décès prématuré.
+                    </p>
+                    <p>
+                        L'objectif de la chirurgie bariatrique en Tunisie est de restreindre la capacité de l'estomac à
+                        contenir de grandes quantités de nourriture et de réduire l'absorption des aliments ingérés. Ces
+                        procédures peuvent également induire des modifications hormonales qui entraînent une sensation
+                        de satiété plus rapide. En tant que méthode des plus efficaces, la chirurgie bariatrique offre
+                        un moyen de traiter l'obésité et d'atteindre une perte de poids significative et durable. Vous
+                        pouvez intégrer cette reformulation sur votre site Best Body Travel.
+
+                    </p>
+                    <p>
+                        Les types de chirurgies de l’obésité qui peuvent être révisés sont :
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check"></i> De L’anneau gastrique à bypass gastrique</li>
+                        <li><i class="bi bi-check"></i> De la sleeve gastrectomie à bypass gastrique</li>
+                        <li><i class="bi bi-check"></i> Ajout de l’anneau gastrique sur le Sleeve</li>
+                        <li><i class="bi bi-check"></i> Une re-sleeve</li>
+                        <li><i class="bi bi-check"></i> De l’anneau gastrique à la sleeve gastrectomie</li>
+                        <li><i class="bi bi-check"></i> Ajout de l’anneau gastrique sur bypass gastrique</li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+    </section><!-- End Features Section -->
+
+
+
+{% endblock body %}

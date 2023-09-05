@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//FR"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Demystifying Email Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<style>
+    table, td, div, h1, p {
+        font-family: Arial, sans-serif;
+    }
+
+    table, td {
+        border: 2px solid #000000 !important;
+    }
+</style>
+<style>
+    body, .container-xxl {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .text-center {
+        text-align: center !important;
+    }
+
+
+    td {
+        border: 1px solid;
+    }
+
+    thead {
+        text-transform: uppercase;
+        border: 0px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 20px 0;
+        text-align: center;
+
+    }
+
+</style>
+
+<br>
+<br>
+<br>
+<div class="body">
+    <div class="container">
+
+        <div class="content">
+            <div class="header text-center">
+                <img src="{{ absolute_url(asset('assets/img/BBTL7.png')) }}" class="logo" alt="Best Body Travel">
+                </a>
+            </div>
+            <h2 class="text-center"> BIENVENUE CHEZ <a href="{{ url('homepage') }}" class="btn"><strong><h3>BEST
+                            BODY
+                            TRAVEL</h3></strong></a></h2>
+            <p class="block">
+                Bonjour,<br>
+                Vous avez reçu une demande de devis pour :<strong> {{ devis.operation.nom }}</strong>
+                Num devis : {{ devis.id }}
+            </p>
+        </div>
+        <!-- Formulaire -->
+        <div class="row">
+            <div class="col-xxl">
+                <table align="center" border="10" cellpadding="30" cellspacing="10"
+                       style="font-family:'Roboto',sans-serif,Arial;margin:0 auto"
+                       width="1500">
+                    {# <table> #}
+
+
+                    <thead style="justify-content: space-between;    display: flex;">
+
+                    <th style="text-align: right">
+                        Date création: {{ devis.dateCreation.format('d/m/Y H:i:s') }}
+                    </th>
+
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label>Nom</label>
+                        </td>
+                        <td>
+                            {{ patient.nom }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 col-form-label"
+                                   for="basic-icon-default-fullname">DateNaissance</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                              ><i class="bx bx-calendar"></i
+                                  ></span>
+                                    {% if  patient.dateNaissance %}
+                                        {{ patient.dateNaissance.format('d/m/Y') }}
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-email">
+                                Email</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                                    <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                                    {{ patient.email }}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 form-label"
+                                   for="basic-icon-default-phone">Telephine</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-phone2" class="input-group-text"
+                              ><i class="bx bx-phone"></i
+                                  ></span>
+                                    {{ patient.telephine }}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 col-form-label"
+                                   for="basic-icon-default-company">Pays</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                    {{ patient.pays }}
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 col-form-label"
+                                   for="basic-icon-default-company">Adresse</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                    {{ patient.adresse }}
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 col-form-label"
+                                   for="basic-icon-default-company">Operation</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                    {{ devis.operation }}
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Date
+                                d'intervention</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                    {{ devis.dateIntervention.format('d/m/Y H:i:s') }}
+
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 form-label"
+                                   for="basic-icon-default-message">Message</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-message2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                    {{ devis.message }}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 form-label" for="basic-icon-default-message">Antecedents
+                                Médicaux</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-AntecedentsMedicaux2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                    {{ devis.AntecedentsMedicaux }}
+
+
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="col-sm-2 form-label" for="basic-icon-default-message">Antecedents
+                                Chirurgicaux</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-antecedentsChirurgicaux2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                    {{ devis.antecedentsChirurgicaux }}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="col-sm-2 form-label" for="basic-icon-default-message">Traitement
+                                EnCours</label>
+                        </td>
+                        <td>
+                            <div class="col-sm-10">
+                                <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-traitementEnCours2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                    {{ devis.traitementEnCours }}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="content">
+            <p>Pour accéder à cette fiche vous pouvez cliquer
+                <a href="{{ ea_url()
+                    .setController('App\\Controller\\Admin\\DevisCrudController')
+                    .setAction('edit')
+                    .setEntityId(devis.id) }}" class="btn"><strong>ici</strong></a>.
+            </p>
+            <h3>Cordialement.</h3>
+        </div>
+
+        <div class="header text-center">
+            <img src="{{ absolute_url(asset('assets/img/BBTL7.png')) }}" class="logo" alt="Best Body Travel">
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

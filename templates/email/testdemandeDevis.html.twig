@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Best Body Travel</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <style type="text/css">
+        @import url(/assets/vendor/bootstrap/css/bootstrap.min.css);
+        @import url(/assets/vendor/boxicons/css/boxicons.min.css);
+    </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <style>
+        body {
+            font-family: 'lato', sans-serif;
+        }
+        .container {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin: 20px 0;
+            text-align: center;
+
+        }
+
+        .responsive-table {
+        li {
+            border-radius: 3px;
+            padding: 25px 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+        .table-header {
+            background-color: #95A5A6;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .table-row {
+            background-color: #ffffff;
+            box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+        }
+        .col-1 {
+            flex-basis: 10%;
+        }
+        .col-2 {
+            flex-basis: 40%;
+        }
+        .col-3 {
+            flex-basis: 25%;
+        }
+        .col-4 {
+            flex-basis: 25%;
+        }
+
+        @media all and (max-width: 767px) {
+            .table-header {
+                display: none;
+            }
+            .table-row{
+
+            }
+            li {
+                display: block;
+            }
+            .col {
+
+                flex-basis: 100%;
+
+            }
+            .col {
+                display: flex;
+                padding: 10px 0;
+
+            }
+        }
+        }
+        .text-center {
+            text-align: center!important;
+        }
+        img, svg {
+            vertical-align: middle;
+        }
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+    </style>
+</head>
+<body>
+
+
+<br>
+<br>
+<br>
+<div class="body">
+    <div class="container">
+        <div class="header text-center">
+            <img src="{{ absolute_url(asset('assets/img/BBTL7.png')) }}" class="logo" alt="Best Body Travel">
+            </a>
+        </div>
+        <div class="content">
+            <h3 class="text-center"> BIENVENUE CHEZ <a href="{{ url('homepage') }}" class="btn"><strong><h3>BEST
+                            BODY
+                            TRAVEL</h3></strong></a></h3>
+            <p class="block">
+                Bonjour,<br>
+                Vous avez reçu une demande de devis pour :<strong> {{ devis.operation.nom }}</strong>
+                Num devis : {{ devis.id }}
+            </p>
+        </div>
+        <!-- Formulaire -->
+        <div class="row">
+            <div class="col-xxl">
+                <table cellspacing="0" cellpadding="10" border="0">
+                    <div class="card mb-4">
+                        <div class="card-header d-flex align-items-center justify-content-between">
+                            <h5 class="mb-0">Contacts</h5>
+                            <small class="text-muted float-end">Date
+                                création: {{ devis.dateCreation.format('d/m/Y H:i:s') }} </small>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Nom</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                              ><i class="bx bx-user"></i
+                                  ></span>
+                                        {{ patient.nom }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label"
+                                       for="basic-icon-default-fullname">DateNaissance</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                              ><i class="bx bx-calendar"></i
+                                  ></span>
+                                        {{ patient.dateNaissance.format('d/m/Y H:i:s') }}
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-email"> Email</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                                        <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                                        {{ patient.email }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 form-label" for="basic-icon-default-phone">Telephine</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-phone2" class="input-group-text"
+                              ><i class="bx bx-phone"></i
+                                  ></span>
+                                        {{ patient.telephine }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Pays</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                        {{ patient.pays }}
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Adresse</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                        {{ patient.adresse }}
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label"
+                                       for="basic-icon-default-company">Operation</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                        {{ devis.operation }}
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Date
+                                    d'intervention</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                              ><i class="bx bx-buildings"></i
+                                  ></span>
+                                        {{ devis.dateIntervention.format('d/m/Y H:i:s') }}
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-message2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                        {{ devis.message }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 form-label" for="basic-icon-default-message">Antecedents
+                                    Médicaux</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-AntecedentsMedicaux2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                        {{ devis.AntecedentsMedicaux }}
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 form-label" for="basic-icon-default-message">Antecedents
+                                    Chirurgicaux</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-antecedentsChirurgicaux2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                        {{ devis.antecedentsChirurgicaux }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label class="col-sm-2 form-label" for="basic-icon-default-message">Traitement
+                                    EnCours</label>
+                                <div class="col-sm-10">
+                                    <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-traitementEnCours2" class="input-group-text"
+                              ><i class="bx bx-comment"></i
+                                  ></span>
+                                        {{ devis.traitementEnCours }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="content">
+            <p>Pour accéder à cette fiche vous pouvez cliquer <a href="{{ url('homepage') }}"
+                                                                 class="btn"><strong>ici</strong></a>.
+            </p>
+            <h3>Cordialement.</h3>
+
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h2>Responsive Tables Using LI <small>Triggers on 767px</small></h2>
+    <ul class="responsive-table">
+        <li class="table-header">
+            <div class="col col-1">Job Id</div>
+            <div class="col col-2">Customer Name</div>
+            <div class="col col-3">Amount Due</div>
+            <div class="col col-4">Payment Status</div>
+        </li>
+        <li class="table-row">
+            <div class="col col-1" data-label="Job Id">42235</div>
+            <div class="col col-2" data-label="Customer Name">John Doe</div>
+            <div class="col col-3" data-label="Amount">$350</div>
+            <div class="col col-4" data-label="Payment Status">Pending</div>
+        </li>
+        <li class="table-row">
+            <div class="col col-1" data-label="Job Id">42442</div>
+            <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+            <div class="col col-3" data-label="Amount">$220</div>
+            <div class="col col-4" data-label="Payment Status">Pending</div>
+        </li>
+        <li class="table-row">
+            <div class="col col-1" data-label="Job Id">42257</div>
+            <div class="col col-2" data-label="Customer Name">John Smith</div>
+            <div class="col col-3" data-label="Amount">$341</div>
+            <div class="col col-4" data-label="Payment Status">Pending</div>
+        </li>
+        <li class="table-row">
+            <div class="col col-1" data-label="Job Id">42311</div>
+            <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+            <div class="col col-3" data-label="Amount">$115</div>
+            <div class="col col-4" data-label="Payment Status">Pending</div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,269 @@
+{% extends 'base.html.twig' %}
+{% block title %}Qui sommes nous{% endblock %}
+{% block body %}
+    <!--
+          ==================================================
+              Global Page Section Start
+          ================================================== -->
+    <section class="global-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block">
+                        <ol class="breadcrumb list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="{{ path('homepage') }}">
+                                    <i class="ion-ios-home"></i>
+                                    Accueil &nbsp; &nbsp;/
+                                </a>
+                            </li>
+                            <li class="active list-inline-item">Neurochirurgie</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ======= Features Section ======= -->
+    {#
+    <section id="features" class="features" data-aos="fade-up">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>CHIRURGIE ESTHÉTIQUE DU VISAGE</h2>
+                <p>Merci de nous contacter directement par téléphone ou via le formulaire en ligne pour toute demande de
+                    complément d’information.</p>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz2fF4rNm5OvEFmBOhZfn5qMnUwKDxpdrQQ4M4h9h9NkQfKZxUaBUgYM1N9FAoJknmhS4&usqp=CAU"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
+                    <h3>LIFTING VISAGE</h3>
+                    <p class="fst-italic">
+                        Obtenez une apparence rajeunie et éblouissante grâce au lifting du visage, une procédure
+                        esthétique révolutionnaire offerte par <b>Shape travel</b>.<br> Le lifting du visage est une
+                        intervention chirurgicale qui vise à restaurer la jeunesse et la fermeté de votre peau, en
+                        éliminant les signes du vieillissement tels que les rides, les ridules et l'affaissement de la
+                        peau.
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check"></i> Restauration de la confiance en soi.</li>
+                        <li><i class="bi bi-check"></i> Rajeunissement global du visage/cou/...</li>
+                        <li><i class="bi bi-check"></i> Raffermissement des contours.</li>
+                        <li><i class="bi bi-check"></i> Amélioration de l'élasticité de la peau.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTlSOeoapxqABetOw9eihVHqHr58IaXcpLiLZgPQVC7RCI5E5-1TPo8kaOE5qmV2YipxQ&usqp=CAU"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                    <h3>BLÉPHAROPLASTIE</h3>
+                    <p class="fst-italic">
+                        Ravivez votre regard avec la blépharoplastie, une procédure esthétique spécialisée proposée par
+                        <b>Shape travel</b>.
+                    </p>
+                    <p>
+                        La blépharoplastie, également connue sous le nom de chirurgie des
+                        paupières, est une intervention chirurgicale délicate visant à restaurer la jeunesse et la
+                        vitalité de vos yeux.
+                    </p>
+                    <ul>
+                        <li><i class="bi bi-check"></i> énergique de votre visage.</li>
+                        <li><i class="bi bi-check"></i> Atténuation des signes visibles du vieillissement et l'aspect
+                            global plus jeune.
+                        </li>
+                        <li><i class="bi bi-check"></i> Amélioration de la vision en éliminant les paupières lourdes.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5" data-aos="fade-right">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF5I03TWk-sfC1lAO3NmUHYnpbjBLujUDwdU4BkC8awYqG38vQxRA0eItWskHa8PsPsog&usqp=CAU"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5" data-aos="fade-left">
+                    <h3>RHINOPLASTIE</h3>
+                    <p>Révélez votre véritable beauté avec la rhinoplastie, une procédure esthétique sur mesure offerte
+                        par <b>Shape travel</b>. </p>
+                    <p>La rhinoplastie, également connue sous le nom de chirurgie du nez,
+                        est une intervention spécialisée qui vise à harmoniser et à améliorer la forme, la taille et la
+                        fonction de votre nez.</p>
+                    <ul>
+                        <li><i class="bi bi-check"></i>Améliorer la symétrie de votre visage.</li>
+                        <li><i class="bi bi-check"></i> Corriger les problèmes fonctionnels qui peuvent affecter votre
+                            respiration.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="container">
+
+            <div class="section-title">
+                <h2>
+                    CHIRURGIE ESTHÉTIQUE DES SEINS
+                </h2>
+                <p>Merci de nous contacter directement par téléphone ou via le formulaire en ligne pour toute demande de
+                    complément d’information.</p>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
+                    <img src="https://drderhy.com/wp-content/uploads/2022/10/Sans-titre-7.png"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
+                    <h3>AUGMENTATION MAMMAIRE</h3>
+                    <p class="fst-italic">
+                        Révélez votre féminité et gagnez en confiance avec l'augmentation mammaire, une procédure
+                        esthétique de premier plan proposée par notre agence.
+                    </p>
+                    <p>L'augmentation mammaire,
+                        également connue sous le nom d'implants mammaires, est une intervention chirurgicale sûre et
+                        prouvée qui vise à augmenter le volume et à améliorer la forme de vos seins.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                    <img src="https://cliniquelesoliviers.net/sites/default/files/field/image/specialite/sein_lift_1.jpg"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                    <h3>LIFTING MAMMAIRE</h3>
+                    <p class="fst-italic">
+                        Offrez à vos seins une apparence rajeunie et raffermie avec le lifting mammaire, une procédure
+                        esthétique de qualité offerte par notre agence.
+                    </p>
+                    <p>
+                        Le lifting mammaire, également connu
+                        sous le nom de mastopexie, est une intervention chirurgicale qui vise à remonter et à remodeler
+                        les seins affaissés ou qui ont perdu leur fermeté.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5" data-aos="fade-right">
+                    <img src="https://www.drbalti.com/wp-content/uploads/2022/09/reduction-mammaire-diminue-le-poids-des-seins.webp"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5" data-aos="fade-left">
+                    <h3>RÉDUCTION MAMMAIRE</h3>
+                    <p>La réduction des seins est l’intervention de chirurgie esthétique ou réparatrice visant à
+                        corriger l’hypertrophie mammaire, définie par un volume important des seins chez la femme</p>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                    <img src="https://www.medespoir.ca/wp-content/uploads/2021/03/gynecomastie-tunisie.jpg"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                    <h3>GYNÉCOMASTIE</h3>
+                    <p class="fst-italic">
+                        L’opération gynécomastie chez l’homme est une technique chirurgicale esthétique qui a pour but
+                        la réduction de la glande mammaire
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="container">
+
+            <div class="section-title">
+                <h2>
+                    CHIRURGIE ESTHÉTIQUE DE LA SILHOUETTE
+                </h2>
+                <p>Merci de nous contacter directement par téléphone ou via le formulaire en ligne pour toute demande de
+                    complément d’information.</p>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5" data-aos="fade-right" data-aos-delay="100">
+                    <img src="https://drderhy.com/wp-content/uploads/2022/10/Sans-titre-7.png"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-4" data-aos="fade-left" data-aos-delay="100">
+                    <h3>LIPOSUCCION</h3>
+                    <p class="fst-italic">
+                        La liposuccion, également appelée lipoaspiration est une chirurgie esthétique de la silhouette
+                        consistant dans le fait de supprimer les surcharges graisseuses présentes dans le corps du
+                        patient, et ce, grâce à l’aspiration
+                    </p>
+
+
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                    <img src="https://cliniquelesoliviers.net/sites/default/files/field/image/specialite/sein_lift_1.jpg"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                    <h3>ABDOMINOPLASTIE</h3>
+                    <p class="fst-italic">
+                        Opération esthétique réparatrice du ventre, l’abdominoplastie consiste dans le fait de traiter
+                        la surcharge graisseuse dans le ventre, ainsi que le relâchement de la peau et le
+                        raffermissement de la paroi musculaire
+                    </p>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5" data-aos="fade-right">
+                    <img src="https://www.drbalti.com/wp-content/uploads/2022/09/reduction-mammaire-diminue-le-poids-des-seins.webp"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5" data-aos="fade-left">
+                    <h3>AUGMENTATION DES FESSES</h3>
+                    <p>Que ce soit à l’aide d’implants fessiers ou de lipofilling, l’augmentation des fesses est une
+                        chirurgie esthétique qui augmente la taille des fesses plates, affaissées ou qui ont subi une
+                        importante perte de poids et dont la forme est ramollie</p>
+                </div>
+            </div>
+
+            <div class="row content">
+                <div class="col-md-5 order-1 order-md-2" data-aos="fade-left">
+                    <img src="https://www.medespoir.ca/wp-content/uploads/2021/03/gynecomastie-tunisie.jpg"
+                         class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7 pt-5 order-2 order-md-1" data-aos="fade-right">
+                    <h3>LIFTING DES CUISSES/BRAS</h3>
+                    <p class="fst-italic">
+                        Comme son nom l’indique, le lifting des bras et des cuisses est une chirurgie esthétique
+                        réparatrice qui supprime le relâchement de la peau des bras et des cuisses
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Features Section -->
+    #}
+
+
+{% endblock body %}

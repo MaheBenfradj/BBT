@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DemandeRDV index{% endblock %}
+
+{% block body %}
+    <h1>DemandeRDV index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Telephone</th>
+                <th>DateRDV</th>
+                <th>DateCreation</th>
+                <th>Message</th>
+                <th>Etat</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for demande_r_d_v in demande_r_d_vs %}
+            <tr>
+                <td>{{ demande_r_d_v.id }}</td>
+                <td>{{ demande_r_d_v.nom }}</td>
+                <td>{{ demande_r_d_v.email }}</td>
+                <td>{{ demande_r_d_v.telephone }}</td>
+                <td>{{ demande_r_d_v.dateRDV ? demande_r_d_v.dateRDV|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ demande_r_d_v.dateCreation ? demande_r_d_v.dateCreation|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ demande_r_d_v.message }}</td>
+                <td>{{ demande_r_d_v.etat }}</td>
+                <td>
+                    <a href="{{ path('app_demande_r_d_v_show', {'id': demande_r_d_v.id}) }}">show</a>
+                    <a href="{{ path('app_demande_r_d_v_edit', {'id': demande_r_d_v.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="9">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_demande_r_d_v_new') }}">Create new</a>
+{% endblock %}
